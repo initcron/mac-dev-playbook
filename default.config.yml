@@ -1,10 +1,10 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_dotfiles: no
+configure_sudoers: no
+configure_terminal: no
+configure_osx: no
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -18,29 +18,13 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
-  - go
   - gpg
   - hub
   - httpie
   - iperf
-  - libevent
-  - sqlite
-  - mcrypt
   - nmap
-  - node
-  - nvm
   - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
   - wget
   - wrk
 
@@ -51,19 +35,14 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
   - dropbox
   # - fing # Download link keeps getting changed, d'oh!
   - firefox
   - google-chrome
   - handbrake
   - licecap
-  - limechat
-  - macvim
-  - sequel-pro
   - skitch
   - slack
-  - sublime-text
   - transmit
   - vagrant
   - virtualbox
